@@ -1,0 +1,23 @@
+.\obj\delay.o: User\BSP\src\delay.c
+.\obj\delay.o: .\User\BSP\inc\delay.h
+.\obj\delay.o: .\User\BSP\inc\sys.h
+.\obj\delay.o: .\User\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\obj\delay.o: .\User\CMSIS\CM3\Core_Support\core_cm3.h
+.\obj\delay.o: D:\Program Files\MDK 4.73\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\delay.o: .\User\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\obj\delay.o: .\User\User\inc\stm32f10x_conf.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
+.\obj\delay.o: .\User\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
+.\obj\delay.o: .\User\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\obj\delay.o: .\User\User\inc\quad_types.h
+.\obj\delay.o: .\User\User\inc\global.h
+.\obj\delay.o: .\User\BSP\inc\tim_pwm_in.h

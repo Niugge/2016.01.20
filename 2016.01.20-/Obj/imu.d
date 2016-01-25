@@ -1,0 +1,44 @@
+.\obj\imu.o: User\Algorithm\src\IMU.c
+.\obj\imu.o: .\User\Algorithm\inc\IMU.h
+.\obj\imu.o: .\User\BSP\inc\MPU6050.H
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\imu.o: .\User\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\obj\imu.o: .\User\CMSIS\CM3\Core_Support\core_cm3.h
+.\obj\imu.o: D:\Program Files\MDK 4.73\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\imu.o: .\User\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\obj\imu.o: .\User\User\inc\stm32f10x_conf.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
+.\obj\imu.o: .\User\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
+.\obj\imu.o: .\User\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\obj\imu.o: .\User\User\inc\quad_types.h
+.\obj\imu.o: .\User\User\inc\global.h
+.\obj\imu.o: .\User\BSP\inc\sys.h
+.\obj\imu.o: .\User\BSP\inc\tim_pwm_in.h
+.\obj\imu.o: .\User\BSP\inc\flash.h
+.\obj\imu.o: .\User\BSP\inc\eeprom.h
+.\obj\imu.o: .\User\BSP\inc\MPU6050.h
+.\obj\imu.o: .\User\Algorithm\inc\PID.h
+.\obj\imu.o: .\User\BSP\inc\moto.h
+.\obj\imu.o: .\User\Algorithm\inc\IMU.h
+.\obj\imu.o: .\User\Algorithm\inc\DATA_Transfer.h
+.\obj\imu.o: .\User\BSP\inc\Nrf24l01.h
+.\obj\imu.o: .\User\BSP\inc\HMC5883L.h
+.\obj\imu.o: D:\Program Files\MDK 4.73\ARM\ARMCC\bin\..\include\math.h
+.\obj\imu.o: .\User\BSP\inc\delay.h
+.\obj\imu.o: .\User\BSP\inc\spi.h
+.\obj\imu.o: .\User\BSP\inc\led.h
+.\obj\imu.o: .\User\BSP\inc\ms5611.h
+.\obj\imu.o: .\User\BSP\inc\usart.h
+.\obj\imu.o: D:\Program Files\MDK 4.73\ARM\ARMCC\bin\..\include\stdio.h
+.\obj\imu.o: .\User\Algorithm\inc\PID.h
+.\obj\imu.o: .\User\BSP\inc\flash.h
+.\obj\imu.o: .\User\BSP\inc\matrix.h

@@ -1,0 +1,540 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\bear\Desktop\QuadControl\QuadControl.uvproj
+Project File Date:  10/14/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling MPU6050.c...
+linking...
+Program Size: Code=32856 RO-data=712 RW-data=348 ZI-data=1652  
+".\Obj\QuadControl.axf" - 0 Error(s), 0 Warning(s).
+n to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+".\Obj\QuadControl.axf" - 1 Error(s), 0 Warning(s).
+Target not created
+er.c...
+compiling usart.c...
+compiling MAIN.c...
+compiling stm32f10x_it.c...
+compiling global.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling DATA_Transfer.c...
+compiling IMU.c...
+User\Algorithm\src\IMU.c(164): warning:  #177-D: variable "nx" was declared but never referenced
+        static float nx = 0,ny = 0;
+User\Algorithm\src\IMU.c(164): warning:  #177-D: variable "ny" was declared but never referenced
+        static float nx = 0,ny = 0;
+User\Algorithm\src\IMU.c: 2 warnings, 0 errors
+compiling PID.c...
+User\Algorithm\src\PID.c(18): warning:  #177-D: variable "e_yaw" was declared but never referenced
+        float e_roll,e_pitch,e_yaw;
+User\Algorithm\src\PID.c(19): warning:  #177-D: variable "yaw_p" was declared but never referenced
+        float rol_i=0,pit_i=0,yaw_p=0;
+User\Algorithm\src\PID.c(22): warning:  #550-D: variable "rol_out" was set but never used
+        u16 rol_out,pitch_out,yaw_dout;
+User\Algorithm\src\PID.c(22): warning:  #550-D: variable "pitch_out" was set but never used
+        u16 rol_out,pitch_out,yaw_dout;
+User\Algorithm\src\PID.c(22): warning:  #177-D: variable "yaw_dout" was declared but never referenced
+        u16 rol_out,pitch_out,yaw_dout;
+User\Algorithm\src\PID.c: 5 warnings, 0 errors
+linking...
+.\Obj\QuadControl.axf: Error: L6200E: Symbol MPU6050_OFFSER multiply defined (by global.o and mpu6050.o).
+.\Obj\QuadControl.axf: Error: L6200E: Symbol test multiply defined (by global.o and mpu6050.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+".\Obj\QuadControl.axf" - 2 Error(s), 7 Warning(s).
+Target not created
+inc\stm32f10x_gpio.h(58): error:  #65: expected a ";"
+  typedef enum
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h(63): warning:  #12-D: parsing restarts here after previous syntax error
+  }GPIOSpeed_TypeDef;
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h(96): error:  #20: identifier "GPIOSpeed_TypeDef" is undefined
+    GPIOSpeed_TypeDef GPIO_Speed;  /*!< Specifies the speed for the selected pins.
+User\BSP\src\MPU6050.c(61): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+         GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+User\BSP\src\MPU6050.c: 1 warning, 3 errors
+compiling MS5611.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h(58): error:  #65: expected a ";"
+  typedef enum
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h(63): warning:  #12-D: parsing restarts here after previous syntax error
+  }GPIOSpeed_TypeDef;
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h(96): error:  #20: identifier "GPIOSpeed_TypeDef" is undefined
+    GPIOSpeed_TypeDef GPIO_Speed;  /*!< Specifies the speed for the selected pins.
+User\BSP\src\MS5611.c: 1 warning, 2 errors
+compiling Nrf24l01.c...
+.\User\BSP\inc\tim_pwm_in.h(5): error:  #65: expected a ";"
+  void RC_Read(T_RC_Data *temp);
+User\BSP\src\Nrf24l01.c: 0 warnings, 1 error
+compiling Spi.c...
+.\User\BSP\inc\spi.h(11): error:  #65: expected a ";"
+  void Spi1_Init(void);
+User\BSP\src\Spi.c: 0 warnings, 1 error
+compiling sys.c...
+.\User\BSP\inc\tim_pwm_in.h(5): error:  #65: expected a ";"
+  void RC_Read(T_RC_Data *temp);
+User\BSP\src\sys.c: 0 warnings, 1 error
+compiling Tim_pwm_in.c...
+.\User\BSP\inc\tim_pwm_in.h(5): error:  #65: expected a ";"
+  void RC_Read(T_RC_Data *temp);
+User\BSP\src\Tim_pwm_in.c: 0 warnings, 1 error
+compiling timer.c...
+.\User\BSP\inc\tim_pwm_in.h(5): error:  #65: expected a ";"
+  void RC_Read(T_RC_Data *temp);
+User\BSP\src\timer.c: 0 warnings, 1 error
+compiling usart.c...
+.\User\BSP\inc\tim_pwm_in.h(5): error:  #65: expected a ";"
+  void RC_Read(T_RC_Data *temp);
+User\BSP\src\usart.c: 0 warnings, 1 error
+compiling MAIN.c...
+.\User\BSP\inc\tim_pwm_in.h(5): error:  #65: expected a ";"
+  void RC_Read(T_RC_Data *temp);
+User\User\src\MAIN.c: 0 warnings, 1 error
+compiling stm32f10x_it.c...
+.\User\User\inc\stm32f10x_it.h(38): error:  #65: expected a ";"
+  void NMI_Handler(void);
+User\User\src\stm32f10x_it.c: 0 warnings, 1 error
+compiling global.c...
+User\User\src\global.c(12): error:  #65: expected a ";"
+  uint8_t GYRO_OFFSET_OK = 0;
+User\User\src\global.c: 0 warnings, 1 error
+compiling misc.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\misc.h(50): error:  #65: expected a ";"
+  typedef struct
+.\User\STM32F10x_StdPeriph_Driver\inc\misc.h(68): warning:  #12-D: parsing restarts here after previous syntax error
+  } NVIC_InitTypeDef;
+.\User\STM32F10x_StdPeriph_Driver\inc\misc.h(197): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+  void NVIC_Init(NVIC_InitTypeDef* NVIC_InitStruct);
+User\STM32F10x_StdPeriph_Driver\src\misc.c(112): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+  void NVIC_Init(NVIC_InitTypeDef* NVIC_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\misc.c(121): error:  #132: expression must have pointer-to-struct-or-union type
+    if (NVIC_InitStruct->NVIC_IRQChannelCmd != DISABLE)
+User\STM32F10x_StdPeriph_Driver\src\misc.c(128): error:  #132: expression must have pointer-to-struct-or-union type
+      tmppriority = (uint32_t)NVIC_InitStruct->NVIC_IRQChannelPreemptionPriority << tmppre;
+User\STM32F10x_StdPeriph_Driver\src\misc.c(129): error:  #132: expression must have pointer-to-struct-or-union type
+      tmppriority |=  NVIC_InitStruct->NVIC_IRQChannelSubPriority & tmpsub;
+User\STM32F10x_StdPeriph_Driver\src\misc.c(132): error:  #132: expression must have pointer-to-struct-or-union type
+      NVIC->IP[NVIC_InitStruct->NVIC_IRQChannel] = tmppriority;
+User\STM32F10x_StdPeriph_Driver\src\misc.c(135): error:  #132: expression must have pointer-to-struct-or-union type
+      NVIC->ISER[NVIC_InitStruct->NVIC_IRQChannel >> 0x05] =
+User\STM32F10x_StdPeriph_Driver\src\misc.c(136): error:  #132: expression must have pointer-to-struct-or-union type
+        (uint32_t)0x01 << (NVIC_InitStruct->NVIC_IRQChannel & (uint8_t)0x1F);
+User\STM32F10x_StdPeriph_Driver\src\misc.c(141): error:  #132: expression must have pointer-to-struct-or-union type
+      NVIC->ICER[NVIC_InitStruct->NVIC_IRQChannel >> 0x05] =
+User\STM32F10x_StdPeriph_Driver\src\misc.c(142): error:  #132: expression must have pointer-to-struct-or-union type
+        (uint32_t)0x01 << (NVIC_InitStruct->NVIC_IRQChannel & (uint8_t)0x1F);
+User\STM32F10x_StdPeriph_Driver\src\misc.c: 1 warning, 11 errors
+compiling stm32f10x_adc.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h(50): error:  #65: expected a ";"
+  typedef struct
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h(74): warning:  #12-D: parsing restarts here after previous syntax error
+  }ADC_InitTypeDef;
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h(429): error:  #20: identifier "ADC_InitTypeDef" is undefined
+  void ADC_Init(ADC_TypeDef* ADCx, ADC_InitTypeDef* ADC_InitStruct);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h(430): error:  #20: identifier "ADC_InitTypeDef" is undefined
+  void ADC_StructInit(ADC_InitTypeDef* ADC_InitStruct);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(218): error:  #20: identifier "ADC_InitTypeDef" is undefined
+  void ADC_Init(ADC_TypeDef* ADCx, ADC_InitTypeDef* ADC_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(239): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg1 |= (uint32_t)(ADC_InitStruct->ADC_Mode | ((uint32_t)ADC_InitStruct->ADC_ScanConvMode << 8));
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(239): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg1 |= (uint32_t)(ADC_InitStruct->ADC_Mode | ((uint32_t)ADC_InitStruct->ADC_ScanConvMode << 8));
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(252): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg1 |= (uint32_t)(ADC_InitStruct->ADC_DataAlign | ADC_InitStruct->ADC_ExternalTrigConv |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(252): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg1 |= (uint32_t)(ADC_InitStruct->ADC_DataAlign | ADC_InitStruct->ADC_ExternalTrigConv |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(253): error:  #132: expression must have pointer-to-struct-or-union type
+              ((uint32_t)ADC_InitStruct->ADC_ContinuousConvMode << 1));
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(264): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg2 |= (uint8_t) (ADC_InitStruct->ADC_NbrOfChannel - (uint8_t)1);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(275): error:  #20: identifier "ADC_InitTypeDef" is undefined
+  void ADC_StructInit(ADC_InitTypeDef* ADC_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(279): error:  #132: expression must have pointer-to-struct-or-union type
+    ADC_InitStruct->ADC_Mode = ADC_Mode_Independent;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(281): error:  #132: expression must have pointer-to-struct-or-union type
+    ADC_InitStruct->ADC_ScanConvMode = DISABLE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(283): error:  #132: expression must have pointer-to-struct-or-union type
+    ADC_InitStruct->ADC_ContinuousConvMode = DISABLE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(285): error:  #132: expression must have pointer-to-struct-or-union type
+    ADC_InitStruct->ADC_ExternalTrigConv = ADC_ExternalTrigConv_T1_CC1;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(287): error:  #132: expression must have pointer-to-struct-or-union type
+    ADC_InitStruct->ADC_DataAlign = ADC_DataAlign_Right;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c(289): error:  #132: expression must have pointer-to-struct-or-union type
+    ADC_InitStruct->ADC_NbrOfChannel = 1;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c: 1 warning, 17 errors
+compiling stm32f10x_dma.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h(50): error:  #65: expected a ";"
+  typedef struct
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h(72): warning:  #12-D: parsing restarts here after previous syntax error
+    uint32_t DMA_MemoryDataSize;     /*!< Specifies the Memory data width.
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h(85): error:  #169: expected a declaration
+  }DMA_InitTypeDef;
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h(411): error:  #20: identifier "DMA_InitTypeDef" is undefined
+  void DMA_Init(DMA_Channel_TypeDef* DMAy_Channelx, DMA_InitTypeDef* DMA_InitStruct);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h(412): error:  #20: identifier "DMA_InitTypeDef" is undefined
+  void DMA_StructInit(DMA_InitTypeDef* DMA_InitStruct);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(202): error:  #20: identifier "DMA_InitTypeDef" is undefined
+  void DMA_Init(DMA_Channel_TypeDef* DMAy_Channelx, DMA_InitTypeDef* DMA_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(232): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg |= DMA_InitStruct->DMA_DIR | DMA_InitStruct->DMA_Mode |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(232): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg |= DMA_InitStruct->DMA_DIR | DMA_InitStruct->DMA_Mode |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(233): error:  #132: expression must have pointer-to-struct-or-union type
+              DMA_InitStruct->DMA_PeripheralInc | DMA_InitStruct->DMA_MemoryInc |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(233): error:  #132: expression must have pointer-to-struct-or-union type
+              DMA_InitStruct->DMA_PeripheralInc | DMA_InitStruct->DMA_MemoryInc |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(234): error:  #132: expression must have pointer-to-struct-or-union type
+              DMA_InitStruct->DMA_PeripheralDataSize | DMA_InitStruct->DMA_MemoryDataSize |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(234): error:  #132: expression must have pointer-to-struct-or-union type
+              DMA_InitStruct->DMA_PeripheralDataSize | DMA_InitStruct->DMA_MemoryDataSize |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(235): error:  #132: expression must have pointer-to-struct-or-union type
+              DMA_InitStruct->DMA_Priority | DMA_InitStruct->DMA_M2M;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(235): error:  #132: expression must have pointer-to-struct-or-union type
+              DMA_InitStruct->DMA_Priority | DMA_InitStruct->DMA_M2M;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(242): error:  #132: expression must have pointer-to-struct-or-union type
+    DMAy_Channelx->CNDTR = DMA_InitStruct->DMA_BufferSize;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(246): error:  #132: expression must have pointer-to-struct-or-union type
+    DMAy_Channelx->CPAR = DMA_InitStruct->DMA_PeripheralBaseAddr;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(250): error:  #132: expression must have pointer-to-struct-or-union type
+    DMAy_Channelx->CMAR = DMA_InitStruct->DMA_MemoryBaseAddr;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(259): error:  #20: identifier "DMA_InitTypeDef" is undefined
+  void DMA_StructInit(DMA_InitTypeDef* DMA_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(263): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_PeripheralBaseAddr = 0;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(265): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_MemoryBaseAddr = 0;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(267): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_DIR = DMA_DIR_PeripheralSRC;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(269): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_BufferSize = 0;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(271): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(273): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_MemoryInc = DMA_MemoryInc_Disable;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(275): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(277): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(279): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_Mode = DMA_Mode_Normal;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(281): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_Priority = DMA_Priority_Low;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c(283): error:  #132: expression must have pointer-to-struct-or-union type
+    DMA_InitStruct->DMA_M2M = DMA_M2M_Disable;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c: 1 warning, 28 errors
+compiling stm32f10x_flash.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(50): error:  #65: expected a ";"
+  typedef enum
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(57): warning:  #12-D: parsing restarts here after previous syntax error
+  }FLASH_Status;
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(373): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_ErasePage(uint32_t Page_Address);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(374): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_EraseAllPages(void);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(375): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_EraseOptionBytes(void);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(376): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_ProgramWord(uint32_t Address, uint32_t Data);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(377): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_ProgramHalfWord(uint32_t Address, uint16_t Data);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(378): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_ProgramOptionByteData(uint32_t Address, uint8_t Data);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(379): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_EnableWriteProtection(uint32_t FLASH_Pages);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(380): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_ReadOutProtection(FunctionalState NewState);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(381): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_UserOptionByteConfig(uint16_t OB_IWDG, uint16_t OB_STOP, uint16_t OB_STDBY);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(389): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_GetStatus(void);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(390): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_WaitForLastOperation(uint32_t Timeout);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(395): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_EraseAllBank1Pages(void);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(396): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_GetBank1Status(void);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h(397): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_WaitForLastBank1Operation(uint32_t Timeout);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(419): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_ErasePage(uint32_t Page_Address)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(421): error:  #20: identifier "FLASH_Status" is undefined
+    FLASH_Status status = FLASH_COMPLETE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(421): error:  #20: identifier "FLASH_COMPLETE" is undefined
+    FLASH_Status status = FLASH_COMPLETE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(492): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_EraseAllPages(void)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(494): error:  #20: identifier "FLASH_Status" is undefined
+    FLASH_Status status = FLASH_COMPLETE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(494): error:  #20: identifier "FLASH_COMPLETE" is undefined
+    FLASH_Status status = FLASH_COMPLETE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(555): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_EraseAllBank1Pages(void)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(557): error:  #20: identifier "FLASH_Status" is undefined
+    FLASH_Status status = FLASH_COMPLETE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(557): error:  #20: identifier "FLASH_COMPLETE" is undefined
+    FLASH_Status status = FLASH_COMPLETE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(616): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_EraseOptionBytes(void)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(620): error:  #20: identifier "FLASH_Status" is undefined
+    FLASH_Status status = FLASH_COMPLETE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(620): error:  #20: identifier "FLASH_COMPLETE" is undefined
+    FLASH_Status status = FLASH_COMPLETE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(654): error:  #20: identifier "FLASH_TIMEOUT" is undefined
+        if(status != FLASH_TIMEOUT)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(662): error:  #20: identifier "FLASH_TIMEOUT" is undefined
+        if (status != FLASH_TIMEOUT)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c(681): error:  #20: identifier "FLASH_Status" is undefined
+  FLASH_Status FLASH_ProgramWord(uint32_t Address, uint32_t Data)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c: 1 warning, 30 errors
+compiling stm32f10x_gpio.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h(58): error:  #65: expected a ";"
+  typedef enum
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h(63): warning:  #12-D: parsing restarts here after previous syntax error
+  }GPIOSpeed_TypeDef;
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h(96): error:  #20: identifier "GPIOSpeed_TypeDef" is undefined
+    GPIOSpeed_TypeDef GPIO_Speed;  /*!< Specifies the speed for the selected pins.
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c(270): error:  #20: identifier "GPIO_Speed_2MHz" is undefined
+    GPIO_InitStruct->GPIO_Speed = GPIO_Speed_2MHz;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c: 1 warning, 3 errors
+compiling stm32f10x_i2c.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h(50): error:  #65: expected a ";"
+  typedef struct
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h(69): warning:  #12-D: parsing restarts here after previous syntax error
+  }I2C_InitTypeDef;
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h(535): error:  #20: identifier "I2C_InitTypeDef" is undefined
+  void I2C_Init(I2C_TypeDef* I2Cx, I2C_InitTypeDef* I2C_InitStruct);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h(536): error:  #20: identifier "I2C_InitTypeDef" is undefined
+  void I2C_StructInit(I2C_InitTypeDef* I2C_InitStruct);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(191): error:  #20: identifier "I2C_InitTypeDef" is undefined
+  void I2C_Init(I2C_TypeDef* I2Cx, I2C_InitTypeDef* I2C_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(228): error:  #132: expression must have pointer-to-struct-or-union type
+    if (I2C_InitStruct->I2C_ClockSpeed <= 100000)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(231): error:  #132: expression must have pointer-to-struct-or-union type
+      result = (uint16_t)(pclk1 / (I2C_InitStruct->I2C_ClockSpeed << 1));
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(246): error:  #132: expression must have pointer-to-struct-or-union type
+      if (I2C_InitStruct->I2C_DutyCycle == I2C_DutyCycle_2)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(249): error:  #132: expression must have pointer-to-struct-or-union type
+        result = (uint16_t)(pclk1 / (I2C_InitStruct->I2C_ClockSpeed * 3));
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(254): error:  #132: expression must have pointer-to-struct-or-union type
+        result = (uint16_t)(pclk1 / (I2C_InitStruct->I2C_ClockSpeed * 25));
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(284): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg |= (uint16_t)((uint32_t)I2C_InitStruct->I2C_Mode | I2C_InitStruct->I2C_Ack);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(284): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg |= (uint16_t)((uint32_t)I2C_InitStruct->I2C_Mode | I2C_InitStruct->I2C_Ack);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(290): error:  #132: expression must have pointer-to-struct-or-union type
+    I2Cx->OAR1 = (I2C_InitStruct->I2C_AcknowledgedAddress | I2C_InitStruct->I2C_OwnAddress1);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(290): error:  #132: expression must have pointer-to-struct-or-union type
+    I2Cx->OAR1 = (I2C_InitStruct->I2C_AcknowledgedAddress | I2C_InitStruct->I2C_OwnAddress1);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(298): error:  #20: identifier "I2C_InitTypeDef" is undefined
+  void I2C_StructInit(I2C_InitTypeDef* I2C_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(302): error:  #132: expression must have pointer-to-struct-or-union type
+    I2C_InitStruct->I2C_ClockSpeed = 5000;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(304): error:  #132: expression must have pointer-to-struct-or-union type
+    I2C_InitStruct->I2C_Mode = I2C_Mode_I2C;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(306): error:  #132: expression must have pointer-to-struct-or-union type
+    I2C_InitStruct->I2C_DutyCycle = I2C_DutyCycle_2;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(308): error:  #132: expression must have pointer-to-struct-or-union type
+    I2C_InitStruct->I2C_OwnAddress1 = 0;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(310): error:  #132: expression must have pointer-to-struct-or-union type
+    I2C_InitStruct->I2C_Ack = I2C_Ack_Disable;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c(312): error:  #132: expression must have pointer-to-struct-or-union type
+    I2C_InitStruct->I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c: 1 warning, 20 errors
+compiling stm32f10x_iwdg.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h(116): error:  #65: expected a ";"
+  void IWDG_WriteAccessCmd(uint16_t IWDG_WriteAccess);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c: 0 warnings, 1 error
+compiling stm32f10x_rcc.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h(46): error:  #65: expected a ";"
+  typedef struct
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h(53): warning:  #12-D: parsing restarts here after previous syntax error
+  }RCC_ClocksTypeDef;
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h(691): error:  #20: identifier "RCC_ClocksTypeDef" is undefined
+  void RCC_GetClocksFreq(RCC_ClocksTypeDef* RCC_Clocks);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(908): error:  #20: identifier "RCC_ClocksTypeDef" is undefined
+  void RCC_GetClocksFreq(RCC_ClocksTypeDef* RCC_Clocks)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(926): error:  #132: expression must have pointer-to-struct-or-union type
+        RCC_Clocks->SYSCLK_Frequency = HSI_VALUE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(929): error:  #132: expression must have pointer-to-struct-or-union type
+        RCC_Clocks->SYSCLK_Frequency = HSE_VALUE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(942): error:  #132: expression must have pointer-to-struct-or-union type
+          RCC_Clocks->SYSCLK_Frequency = (HSI_VALUE >> 1) * pllmull;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(954): error:  #132: expression must have pointer-to-struct-or-union type
+            RCC_Clocks->SYSCLK_Frequency = (HSE_VALUE >> 1) * pllmull;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(958): error:  #132: expression must have pointer-to-struct-or-union type
+            RCC_Clocks->SYSCLK_Frequency = HSE_VALUE * pllmull;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1002): error:  #132: expression must have pointer-to-struct-or-union type
+        RCC_Clocks->SYSCLK_Frequency = HSI_VALUE;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1012): error:  #132: expression must have pointer-to-struct-or-union type
+    RCC_Clocks->HCLK_Frequency = RCC_Clocks->SYSCLK_Frequency >> presc;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1012): error:  #132: expression must have pointer-to-struct-or-union type
+    RCC_Clocks->HCLK_Frequency = RCC_Clocks->SYSCLK_Frequency >> presc;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1018): error:  #132: expression must have pointer-to-struct-or-union type
+    RCC_Clocks->PCLK1_Frequency = RCC_Clocks->HCLK_Frequency >> presc;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1018): error:  #132: expression must have pointer-to-struct-or-union type
+    RCC_Clocks->PCLK1_Frequency = RCC_Clocks->HCLK_Frequency >> presc;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1024): error:  #132: expression must have pointer-to-struct-or-union type
+    RCC_Clocks->PCLK2_Frequency = RCC_Clocks->HCLK_Frequency >> presc;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1024): error:  #132: expression must have pointer-to-struct-or-union type
+    RCC_Clocks->PCLK2_Frequency = RCC_Clocks->HCLK_Frequency >> presc;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1030): error:  #132: expression must have pointer-to-struct-or-union type
+    RCC_Clocks->ADCCLK_Frequency = RCC_Clocks->PCLK2_Frequency / presc;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c(1030): error:  #132: expression must have pointer-to-struct-or-union type
+    RCC_Clocks->ADCCLK_Frequency = RCC_Clocks->PCLK2_Frequency / presc;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c: 1 warning, 17 errors
+compiling stm32f10x_spi.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h(50): error:  #65: expected a ";"
+  typedef struct
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h(77): warning:  #12-D: parsing restarts here after previous syntax error
+    uint16_t SPI_FirstBit;            /*!< Specifies whether data transfers start from MSB or LSB bit.
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h(81): error:  #169: expected a declaration
+  }SPI_InitTypeDef;
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h(447): error:  #20: identifier "SPI_InitTypeDef" is undefined
+  void SPI_Init(SPI_TypeDef* SPIx, SPI_InitTypeDef* SPI_InitStruct);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h(449): error:  #20: identifier "SPI_InitTypeDef" is undefined
+  void SPI_StructInit(SPI_InitTypeDef* SPI_InitStruct);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(158): error:  #20: identifier "SPI_InitTypeDef" is undefined
+  void SPI_Init(SPI_TypeDef* SPIx, SPI_InitTypeDef* SPI_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(189): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg |= (uint16_t)((uint32_t)SPI_InitStruct->SPI_Direction | SPI_InitStruct->SPI_Mode |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(189): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg |= (uint16_t)((uint32_t)SPI_InitStruct->SPI_Direction | SPI_InitStruct->SPI_Mode |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(190): error:  #132: expression must have pointer-to-struct-or-union type
+                    SPI_InitStruct->SPI_DataSize | SPI_InitStruct->SPI_CPOL |  
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(190): error:  #132: expression must have pointer-to-struct-or-union type
+                    SPI_InitStruct->SPI_DataSize | SPI_InitStruct->SPI_CPOL |  
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(191): error:  #132: expression must have pointer-to-struct-or-union type
+                    SPI_InitStruct->SPI_CPHA | SPI_InitStruct->SPI_NSS |  
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(191): error:  #132: expression must have pointer-to-struct-or-union type
+                    SPI_InitStruct->SPI_CPHA | SPI_InitStruct->SPI_NSS |  
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(192): error:  #132: expression must have pointer-to-struct-or-union type
+                    SPI_InitStruct->SPI_BaudRatePrescaler | SPI_InitStruct->SPI_FirstBit);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(192): error:  #132: expression must have pointer-to-struct-or-union type
+                    SPI_InitStruct->SPI_BaudRatePrescaler | SPI_InitStruct->SPI_FirstBit);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(201): error:  #132: expression must have pointer-to-struct-or-union type
+    SPIx->CRCPR = SPI_InitStruct->SPI_CRCPolynomial;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(370): error:  #20: identifier "SPI_InitTypeDef" is undefined
+  void SPI_StructInit(SPI_InitTypeDef* SPI_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(374): error:  #132: expression must have pointer-to-struct-or-union type
+    SPI_InitStruct->SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(376): error:  #132: expression must have pointer-to-struct-or-union type
+    SPI_InitStruct->SPI_Mode = SPI_Mode_Slave;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(378): error:  #132: expression must have pointer-to-struct-or-union type
+    SPI_InitStruct->SPI_DataSize = SPI_DataSize_8b;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(380): error:  #132: expression must have pointer-to-struct-or-union type
+    SPI_InitStruct->SPI_CPOL = SPI_CPOL_Low;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(382): error:  #132: expression must have pointer-to-struct-or-union type
+    SPI_InitStruct->SPI_CPHA = SPI_CPHA_1Edge;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(384): error:  #132: expression must have pointer-to-struct-or-union type
+    SPI_InitStruct->SPI_NSS = SPI_NSS_Hard;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(386): error:  #132: expression must have pointer-to-struct-or-union type
+    SPI_InitStruct->SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_2;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(388): error:  #132: expression must have pointer-to-struct-or-union type
+    SPI_InitStruct->SPI_FirstBit = SPI_FirstBit_MSB;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c(390): error:  #132: expression must have pointer-to-struct-or-union type
+    SPI_InitStruct->SPI_CRCPolynomial = 7;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c: 1 warning, 24 errors
+compiling stm32f10x_tim.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h(51): error:  #65: expected a ";"
+  typedef struct
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h(74): warning:  #12-D: parsing restarts here after previous syntax error
+  } TIM_TimeBaseInitTypeDef;       
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h(1055): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+  void TIM_TimeBaseInit(TIM_TypeDef* TIMx, TIM_TimeBaseInitTypeDef* TIM_TimeBaseInitStruct);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h(1063): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+  void TIM_TimeBaseStructInit(TIM_TimeBaseInitTypeDef* TIM_TimeBaseInitStruct);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(226): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+  void TIM_TimeBaseInit(TIM_TypeDef* TIMx, TIM_TimeBaseInitTypeDef* TIM_TimeBaseInitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(242): error:  #132: expression must have pointer-to-struct-or-union type
+      tmpcr1 |= (uint32_t)TIM_TimeBaseInitStruct->TIM_CounterMode;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(249): error:  #132: expression must have pointer-to-struct-or-union type
+      tmpcr1 |= (uint32_t)TIM_TimeBaseInitStruct->TIM_ClockDivision;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(255): error:  #132: expression must have pointer-to-struct-or-union type
+    TIMx->ARR = TIM_TimeBaseInitStruct->TIM_Period ;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(258): error:  #132: expression must have pointer-to-struct-or-union type
+    TIMx->PSC = TIM_TimeBaseInitStruct->TIM_Prescaler;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(263): error:  #132: expression must have pointer-to-struct-or-union type
+      TIMx->RCR = TIM_TimeBaseInitStruct->TIM_RepetitionCounter;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(736): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+  void TIM_TimeBaseStructInit(TIM_TimeBaseInitTypeDef* TIM_TimeBaseInitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(739): error:  #132: expression must have pointer-to-struct-or-union type
+    TIM_TimeBaseInitStruct->TIM_Period = 0xFFFF;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(740): error:  #132: expression must have pointer-to-struct-or-union type
+    TIM_TimeBaseInitStruct->TIM_Prescaler = 0x0000;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(741): error:  #132: expression must have pointer-to-struct-or-union type
+    TIM_TimeBaseInitStruct->TIM_ClockDivision = TIM_CKD_DIV1;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(742): error:  #132: expression must have pointer-to-struct-or-union type
+    TIM_TimeBaseInitStruct->TIM_CounterMode = TIM_CounterMode_Up;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c(743): error:  #132: expression must have pointer-to-struct-or-union type
+    TIM_TimeBaseInitStruct->TIM_RepetitionCounter = 0x0000;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c: 1 warning, 15 errors
+compiling stm32f10x_usart.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h(50): error:  #65: expected a ";"
+  typedef struct
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h(73): warning:  #12-D: parsing restarts here after previous syntax error
+    uint16_t USART_HardwareFlowControl; /*!< Specifies wether the hardware flow control mode is enabled
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h(76): error:  #169: expected a declaration
+  } USART_InitTypeDef;
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h(366): error:  #20: identifier "USART_InitTypeDef" is undefined
+  void USART_Init(USART_TypeDef* USARTx, USART_InitTypeDef* USART_InitStruct);
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h(367): error:  #20: identifier "USART_InitTypeDef" is undefined
+  void USART_StructInit(USART_InitTypeDef* USART_InitStruct);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(176): error:  #20: identifier "USART_InitTypeDef" is undefined
+  void USART_Init(USART_TypeDef* USARTx, USART_InitTypeDef* USART_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(192): error:  #132: expression must have pointer-to-struct-or-union type
+    if (USART_InitStruct->USART_HardwareFlowControl != USART_HardwareFlowControl_None)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(205): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg |= (uint32_t)USART_InitStruct->USART_StopBits;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(218): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg |= (uint32_t)USART_InitStruct->USART_WordLength | USART_InitStruct->USART_Parity |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(218): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg |= (uint32_t)USART_InitStruct->USART_WordLength | USART_InitStruct->USART_Parity |
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(219): error:  #132: expression must have pointer-to-struct-or-union type
+              USART_InitStruct->USART_Mode;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(229): error:  #132: expression must have pointer-to-struct-or-union type
+    tmpreg |= USART_InitStruct->USART_HardwareFlowControl;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(249): error:  #132: expression must have pointer-to-struct-or-union type
+      integerdivider = ((25 * apbclock) / (2 * (USART_InitStruct->USART_BaudRate)));    
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(254): error:  #132: expression must have pointer-to-struct-or-union type
+      integerdivider = ((25 * apbclock) / (4 * (USART_InitStruct->USART_BaudRate)));    
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(281): error:  #20: identifier "USART_InitTypeDef" is undefined
+  void USART_StructInit(USART_InitTypeDef* USART_InitStruct)
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(284): error:  #132: expression must have pointer-to-struct-or-union type
+    USART_InitStruct->USART_BaudRate = 9600;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(285): error:  #132: expression must have pointer-to-struct-or-union type
+    USART_InitStruct->USART_WordLength = USART_WordLength_8b;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(286): error:  #132: expression must have pointer-to-struct-or-union type
+    USART_InitStruct->USART_StopBits = USART_StopBits_1;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(287): error:  #132: expression must have pointer-to-struct-or-union type
+    USART_InitStruct->USART_Parity = USART_Parity_No ;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(288): error:  #132: expression must have pointer-to-struct-or-union type
+    USART_InitStruct->USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c(289): error:  #132: expression must have pointer-to-struct-or-union type
+    USART_InitStruct->USART_HardwareFlowControl = USART_HardwareFlowControl_None;  
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c: 1 warning, 20 errors
+compiling stm32f10x_wwdg.c...
+.\User\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h(88): error:  #65: expected a ";"
+  void WWDG_DeInit(void);
+User\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c: 0 warnings, 1 error
+compiling DATA_Transfer.c...
+.\User\BSP\inc\tim_pwm_in.h(5): error:  #65: expected a ";"
+  void RC_Read(T_RC_Data *temp);
+User\Algorithm\src\DATA_Transfer.c: 0 warnings, 1 error
+".\Obj\QuadControl.axf" - 214 Error(s), 14 Warning(s).
+Project build/rebuild aborted.
